@@ -1,7 +1,14 @@
+:root {
+  --tallhandwriting: "Bad Script", cursive;
+  --default: "Handlee", cursive;
+  --cursive-pretty: "Parisienne", cursive;
+  --handwriting: "Reenie Beanie", cursive;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
-  color: goldenrod;
+  color: #ddb272;
 }
 
 html {
@@ -9,11 +16,162 @@ html {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../src/images/yoshi-nori-background.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../src/images/YNBackground.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: black;
   text-align: center;
-  padding: 500px 0;
+  padding: 200px 300px 450px 300px;
+}
+
+header h1 {
+  font-size: 100px;
+  margin: 0;
+  font-family: var(--default);
+  background: #959595;
+  background: repeating-radial-gradient(
+    ellipse farthest-corner at center center,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-transform: uppercase;
+}
+header h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 34px;
+  margin-top: 0;
+}
+
+header h2,
+header h3 {
+  font-family: var(--tallhandwriting);
+  opacity: 0.8;
+  color: #321e2a;
+}
+
+h1 {
+  font-family: var(--tallhandwriting);
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-family: var(--default);
+  font-size: 35px;
+}
+
+h3 {
+  font-family: var(--default);
+  color: #ddb272;
+  font-size: 25px;
+}
+
+p {
+  font-size: 25px;
+  font-family: var(--default);
+}
+
+ul {
+  font-family: var(--default);
+}
+
+a {
+  color: #ddb272;
+  font-size: 25px;
+}
+
+a:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+
+footer {
+  font-size: 25px;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.img-fluid {
+  width: 80%;
+}
+
+.section-1 {
+  background-color: black;
+  padding: 80px;
+}
+
+.note {
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.welcome-image {
+  border-radius: 20px;
+  width: 70%;
+  margin-left: 80px;
+}
+
+.welcome-note {
+  font-size: 25px;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.section-2 {
+  background-color: #1e1b2c;
+  padding: 60px;
+}
+
+.section-3 {
+  background-color: black;
+  padding: 20px;
+}
+
+.routines {
+  font-size: 32px;
+  line-height: 2;
+  margin: 20px;
+}
+
+.daily-routines-img {
+  border-radius: 20px;
+  width: 70%;
+  margin-left: 20px;
+}
+
+.section-4 {
+  background-color: #1e1b2c;
+  padding: 60px;
+}
+
+.yoshi-image {
+  width: 60%;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+
+.vitamins {
+  font-size: 25px;
+}
+
+.section-5 {
+  background-color: black;
+  padding: 100px;
 }
