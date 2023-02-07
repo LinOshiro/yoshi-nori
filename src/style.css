@@ -8,7 +8,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
-  color: #ddb272;
+  color: white;
 }
 
 html {
@@ -16,7 +16,10 @@ html {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.4),
+      rgba(39, 32, 68, 0.4)
+    ),
     url("../src/images/YNBackground.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +61,7 @@ header h3 {
 header h2,
 header h3 {
   font-family: var(--tallhandwriting);
-  opacity: 0.8;
+  opacity: 0.9;
   color: #321e2a;
 }
 
@@ -66,7 +69,7 @@ h1 {
   font-family: var(--tallhandwriting);
   font-size: 50px;
   text-align: center;
-  color: white;
+  color: #ddb272;
 }
 
 h2 {
@@ -81,7 +84,7 @@ h3 {
 }
 
 p {
-  font-size: 25px;
+  font-size: 30px;
   font-family: var(--default);
 }
 
@@ -101,6 +104,15 @@ a:hover {
 
 footer {
   font-size: 25px;
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.8)
+    ),
+    url("../src/images/cute-dogs.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
 }
 
 .container {
@@ -134,6 +146,10 @@ footer {
   line-height: 1.5;
 }
 
+.thanks {
+  color: white;
+}
+
 .section-2 {
   background-color: #1e1b2c;
   padding: 60px;
@@ -162,7 +178,7 @@ footer {
 }
 
 .yoshi-image {
-  width: 60%;
+  width: 70%;
   border-radius: 20px;
   margin-left: 50px;
 }
@@ -173,5 +189,12 @@ footer {
 
 .section-5 {
   background-color: black;
-  padding: 100px;
+  padding: 30px;
+  margin-left: 20px;
+}
+
+.nori-img {
+  width: 70%;
+  border-radius: 20px;
+  margin-left: 90px;
 }
