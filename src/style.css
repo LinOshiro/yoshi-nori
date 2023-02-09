@@ -232,7 +232,7 @@ footer {
     font-size: 8px;
   }
   h1 {
-    font-size: 14px;
+    font-size: 18px;
   }
   h2 {
     font-size: 9px;
@@ -327,7 +327,7 @@ footer {
   }
 
   .daily-routines-img {
-    width: 80%;
+    width: 60%;
     margin-left: 20px;
     margin-top: 15px;
   }
@@ -357,7 +357,7 @@ footer {
   }
 
   .description-nori {
-    padding: 10px 60px 10px 60px;
+    padding: 0px 50px 10px 50px;
   }
 }
 
