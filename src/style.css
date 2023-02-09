@@ -174,7 +174,7 @@ footer {
 .routines {
   font-size: 32px;
   line-height: 2;
-  padding: 0;
+  padding: 100px;
 }
 
 .daily-routines-img {
@@ -187,10 +187,13 @@ footer {
   padding: 60px;
 }
 
-.yoshi-image {
-  width: 70%;
+.yoshi-img {
+  width: 30%;
   border-radius: 20px;
-  margin-left: 50px;
+}
+
+.description {
+  padding: 100px;
 }
 
 .vitamins {
@@ -204,9 +207,12 @@ footer {
 }
 
 .nori-img {
-  width: 70%;
+  width: 30%;
   border-radius: 20px;
-  margin-left: 90px;
+}
+
+.description-nori {
+  padding: 100px;
 }
 
 @media (max-width: 800px) {
@@ -317,7 +323,7 @@ footer {
   .routines {
     font-size: 15px;
     line-height: 1.5;
-    padding-left: 10px;
+    padding: 40px;
   }
 
   .daily-routines-img {
@@ -330,11 +336,13 @@ footer {
     padding: 30px;
   }
 
-  .yoshi-image {
-    width: 35%;
-    margin-left: 25px;
+  .yoshi-img {
+    width: 45%;
   }
 
+  .description {
+    padding: 10px;
+  }
   .vitamins {
     font-size: 12px;
   }
@@ -345,8 +353,11 @@ footer {
   }
 
   .nori-img {
-    width: 35%;
-    margin-left: 45px;
+    width: 30%;
+  }
+
+  .description-nori {
+    padding: 10px 60px 10px 60px;
   }
 }
 
