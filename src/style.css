@@ -67,6 +67,8 @@ nav a {
   font-size: 55px;
   font-weight: 400;
   letter-spacing: 30px;
+
+  animation: moveInLeft 1s ease-out;
 }
 
 .heading-primary--sub {
@@ -75,23 +77,36 @@ nav a {
   font-weight: 700;
   letter-spacing: 10px;
   margin: 25px;
+
+  animation: moveInRight 1s ease-out;
 }
 
-.header h2 {
-  font-size: 30px;
-  margin: 0;
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.header h3 {
-  font-size: 34px;
-  margin-top: 0;
-}
-
-.header h2,
-.header h3 {
-  font-family: var(--tallhandwriting);
-  opacity: 0.9;
-  color: #321e2a;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
