@@ -1,7 +1,9 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 :root {
@@ -19,6 +21,8 @@ body {
   background-color: black;
   color: white;
   padding: 30px;
+
+  box-sizing: border-box;
 }
 
 html {
@@ -85,10 +89,10 @@ nav a {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(10px);
+    transform: translateX(0.5rem);
   }
   100% {
     opacity: 1;
@@ -99,10 +103,10 @@ nav a {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-0.5rem);
   }
   100% {
     opacity: 1;
