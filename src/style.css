@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --tallhandwriting: "Bad Script", cursive;
   --default: "Handlee", cursive;
@@ -6,8 +12,13 @@
 }
 
 body {
+  font-family: var(--default);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
   background-color: black;
   color: white;
+  padding: 30px;
 }
 
 html {
@@ -26,51 +37,58 @@ nav a {
   color: #1e1b2c;
 }
 
-header {
+.header {
+  height: 95vh;
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.4),
       rgba(39, 32, 68, 0.4)
     ),
     url("../src/images/YNBackground.jpeg");
-  background-repeat: no-repeat;
   background-size: cover;
-  color: black;
-  text-align: center;
-  padding: 200px 300px 450px 300px;
+  background-position: top;
+  clip-path: polygon(0 3%, 100% 0, 100% 86%, 0 100%);
+  position: relative;
+  font-family: var(--cursive-pretty);
 }
 
-header h1 {
-  font-size: 100px;
-  margin: 0;
-  font-family: var(--default);
-  background: #959595;
-  background: repeating-radial-gradient(
-    ellipse farthest-corner at center center,
-    #959595 0%,
-    #0d0d0d 46%,
-    #010101 50%,
-    #0a0a0a 53%,
-    #4e4e4e 76%,
-    #383838 87%,
-    #1b1b1b 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+.header__text-box {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.heading-primary {
+  color: rgba(39, 41, 41, 0.803);
   text-transform: uppercase;
 }
-header h2 {
+
+.heading-primary--main {
+  display: block;
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 30px;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin: 25px;
+}
+
+.header h2 {
   font-size: 30px;
   margin: 0;
 }
 
-header h3 {
+.header h3 {
   font-size: 34px;
   margin-top: 0;
 }
 
-header h2,
-header h3 {
+.header h2,
+.header h3 {
   font-family: var(--tallhandwriting);
   opacity: 0.9;
   color: #321e2a;
